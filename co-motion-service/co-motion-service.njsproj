@@ -3,30 +3,33 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>co-motion</Name>
-    <RootNamespace>co-motion</RootNamespace>
+    <Name>co-motion-service</Name>
+    <RootNamespace>co-motion-service</RootNamespace>
     <ToolsVersionPromptShown>1.4</ToolsVersionPromptShown>
     <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <NodejsPort>5858</NodejsPort>
+    <DebuggerPort>
+    </DebuggerPort>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>74f526ac-030d-4508-b4cb-5f89f7c5631c</ProjectGuid>
+    <ProjectGuid>2df9cc0f-7f5e-4135-83e5-072b94303e74</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>app.ts</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <ProjectView>ProjectFiles</ProjectView>
-    <NodejsPort>1337</NodejsPort>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
     <EnableTypeScript>true</EnableTypeScript>
-    <StartWebBrowser>true</StartWebBrowser>
+    <StartWebBrowser>False</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,39 +38,15 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="views\index.hbs" />
-    <Content Include="views\layouts\_layout.hbs" />
-    <Content Include="views\moves_auth.hbs" />
-    <Content Include="views\moves_res.hbs" />
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="models\user.ts" />
-    <TypeScriptCompile Include="models\UserRepository.ts" />
-    <TypeScriptCompile Include="routes\index.ts" />
-    <TypeScriptCompile Include="routes\api\user.ts" />
-    <TypeScriptCompile Include="routes\views\moves.ts" />
-    <TypeScriptCompile Include="Scripts\typings\express\express.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\q\Q.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\sqlite3\sqlite3.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\stylus\stylus.d.ts" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="models\" />
-    <Folder Include="public\" />
-    <Folder Include="routes\" />
-    <Folder Include="routes\api\" />
-    <Folder Include="routes\views\" />
     <Folder Include="Scripts\" />
     <Folder Include="Scripts\typings\" />
-    <Folder Include="Scripts\typings\express\" />
-    <Folder Include="Scripts\typings\q\" />
-    <Folder Include="Scripts\typings\sqlite3\" />
     <Folder Include="Scripts\typings\node\" />
-    <Folder Include="Scripts\typings\stylus\" />
-    <Folder Include="views\" />
-    <Folder Include="views\layouts\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

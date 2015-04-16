@@ -1,0 +1,10 @@
+{
+  "name": "co-motion-service",
+  "version": "0.0.0",
+  "description": "co-motion-service",
+  "main": "app.js",
+  "author": {
+    "name": "s.yearsley",
+    "email": ""
+  }
+}

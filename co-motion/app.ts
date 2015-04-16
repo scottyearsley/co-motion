@@ -1,6 +1,7 @@
 ﻿import express = require('express');
-import routes = require('./routes/index');
-import user = require('./routes/user');
+import api = require('./routes/api/user');
+import movesRouter = require('./routes/views/moves');
+
 import http = require('http');
 import path = require('path');
 
@@ -11,7 +12,6 @@ var errorhandler = require('errorhandler');
 var exphbs = require('express-handlebars');
 
 var app = express();
-var router = new express.Router();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -33,18 +33,13 @@ if (app.get('env') == 'production') {
     app.use(morgan('dev'));
 }
 
-//import stylus = require('stylus');
-//app.use(stylus.middleware(path.join(__dirname, 'public')));
-//app.use(express.static(path.join(__dirname, 'public')));
-
 // development only
 if ('development' == app.get('env')) {
     app.use(errorhandler());
 }
 
-// Set routes
-router.get('/', routes.index);
-app.use('/',(<any>router));
+app.use('/api/users', <any>api);
+app.use('/moves', <any>movesRouter);
 
 http.createServer(app).listen(app.get('port'), () => {
     console.log('Express server listening on port ' + app.get('port'));
