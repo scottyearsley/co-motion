@@ -11,6 +11,19 @@ class UserRepository {
         this.db = new sqlite.Database('co-motion.db');
     }
 
+    getLastInsertId(): Q.Promise<number> {
+        var deferred: Q.Deferred<number> = q.defer();
+        this.db.get("SELECT last_insert_rowid() AS Id",(error,result) => {
+            if (error === null) {
+                deferred.resolve(result.Id);
+            } else {
+                deferred.reject(error);
+            }
+        });
+
+        return deferred.promise;
+    }
+
     getAll(): Q.Promise<any> {
         var deferred: Q.Deferred<any> = q.defer();
 
@@ -67,9 +80,9 @@ class UserRepository {
         return deferred.promise;
     }
 
-    updateCode(id: number, code: string) {
-        var stmt = this.db.prepare('UPDATE "main"."User" SET Code = ?1 WHERE  "Id" = ?2');
-        stmt.run(code, id);
+    updateCode(id: number, code: string, moveId: string) {
+        var stmt = this.db.prepare('UPDATE "main"."User" SET Code = ?1, MoveId = ?2 WHERE "Id" = ?3');
+        stmt.run(code, moveId.toString(), id);
         stmt.finalize();
     }
 

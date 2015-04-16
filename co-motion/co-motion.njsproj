@@ -40,8 +40,11 @@
     <Content Include="views\moves_auth.hbs" />
     <Content Include="views\moves_res.hbs" />
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="models\ActivityRepository.ts" />
+    <TypeScriptCompile Include="models\reportTotal.ts" />
     <TypeScriptCompile Include="models\user.ts" />
     <TypeScriptCompile Include="models\UserRepository.ts" />
+    <TypeScriptCompile Include="routes\api\activities.ts" />
     <TypeScriptCompile Include="routes\index.ts" />
     <TypeScriptCompile Include="routes\api\user.ts" />
     <TypeScriptCompile Include="routes\views\moves.ts" />

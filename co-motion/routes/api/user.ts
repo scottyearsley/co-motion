@@ -23,9 +23,14 @@ module.exports = (() => {
         var firstname: string = req.body.firstname;
         var surname: string = req.body.surname;
         var email: string = req.body.email;
+        var repos = new userRepository();
 
-        new userRepository().add(firstname, surname, email)
-            .then(() => res.send(200))
+        repos.add(firstname, surname, email)
+            .then(() => {
+                return repos.getLastInsertId();
+            }).then(userId => {
+                return res.send({ "userId": userId });
+            })
             .fail(() => res.send(500));
     });
 

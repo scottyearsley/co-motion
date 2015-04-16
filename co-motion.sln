@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "co-motion", "co-motion\co-motion.njsproj", "{74F526AC-030D-4508-B4CB-5F89F7C5631C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "co-motion.Import", "co-motion.Import\co-motion.Import.csproj", "{C91742B5-19D4-41BB-9AEE-F899D2B85419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{74F526AC-030D-4508-B4CB-5F89F7C5631C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74F526AC-030D-4508-B4CB-5F89F7C5631C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74F526AC-030D-4508-B4CB-5F89F7C5631C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91742B5-19D4-41BB-9AEE-F899D2B85419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91742B5-19D4-41BB-9AEE-F899D2B85419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91742B5-19D4-41BB-9AEE-F899D2B85419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91742B5-19D4-41BB-9AEE-F899D2B85419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,7 +36,7 @@ module.exports = (() => {
             resp.on('end', () => {
                 var authResponse = JSON.parse(responseString);
                 var repo = new userRepository();
-                repo.updateCode(userId, authResponse.access_token);
+                repo.updateCode(userId, authResponse.access_token, authResponse.user_id);
                 res.render('moves_res', {});
             });
 

@@ -1,5 +1,6 @@
 ﻿import express = require('express');
-import api = require('./routes/api/user');
+import usersApi = require('./routes/api/user');
+import activitiesApi = require('./routes/api/activities');
 import movesRouter = require('./routes/views/moves');
 
 import http = require('http');
@@ -38,7 +39,8 @@ if ('development' == app.get('env')) {
     app.use(errorhandler());
 }
 
-app.use('/api/users', <any>api);
+app.use('/api/users', <any>usersApi);
+app.use('/api/activities', <any>activitiesApi);
 app.use('/moves', <any>movesRouter);
 
 http.createServer(app).listen(app.get('port'), () => {
