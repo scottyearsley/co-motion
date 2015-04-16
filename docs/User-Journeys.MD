@@ -1,8 +1,14 @@
 # User Sotries
-- As a Zengenti team member I want to connect to my Moves account so my step count is included as part of the project
-- As a user I want to be able to disconnect my Moves account so that I can end my participation in the project
-- As a Zengenti team member I want to view how many steps the company has made as a whole so that I can feel a sense of teamwork towards a goal
-- As a Zengenti team member I want to see if I'm one of the people taking the most steps overall so that I can feel motivated to increase or maintain my position compared to others
+- As a Zengenti team member I want to connect to my Moves account so my step count is included as part of the co-motion project
+- As a participant I want the ability to disconnect my Moves account so that I have the option to end my participation in the project
+- As a participant I want to view the progress all participants have made towards an achievable goal so that I can feel part of a successful team
+- As a top 5 contibutor of steps to the project I want this to be published so that I can feel motivated to increase or maintain my position compared to others
+- As a participant I want goals to engage me so that I'm motivated to achieve them
+
+
+
+
+
 
 
 
