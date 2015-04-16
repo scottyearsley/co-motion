@@ -10,6 +10,9 @@ IF total steps between 58070 AND 73176 THEN string == "Mount Everest"
 IF total steps between 73177 AND infinite THEN string == "Stratosphere"
 
 
+
+
+# Not used
 IF total steps between XX AND XX THEN achievment == "XX"
 IF total steps between XX AND XX THEN achievment == "XX"
 IF total steps between XX AND XX THEN achievment == "XX"
