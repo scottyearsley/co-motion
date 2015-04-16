@@ -1,0 +1,19 @@
+# Daily achievements
+
+IF total steps between 0 AND 6179 THEN string == "Nothing yet"
+IF total steps between 6180 AND 7119 THEN string == "Scarfell Pike"
+IF total steps between 7120 AND 8809 THEN string == "Snowdon"
+IF total steps between 8810 AND 30419 THEN string == "Ben Nevis"
+IF total steps between 30420 AND 38679 THEN string == "Mont Blanc"
+IF total steps between 38680 AND 58069 THEN string == "Mount Kilimanjaro"
+IF total steps between 58070 AND 73176 THEN string == "Mount Everest"
+IF total steps between 73177 AND infinite THEN string == "Stratosphere"
+
+
+
+
+# Not used
+IF total steps between XX AND XX THEN achievment == "XX"
+IF total steps between XX AND XX THEN achievment == "XX"
+IF total steps between XX AND XX THEN achievment == "XX"
+IF total steps between XX AND XX THEN achievment == "XX"
