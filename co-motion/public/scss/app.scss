@@ -75,12 +75,18 @@ font-family: $font-family-serif;
 }
 }
 
-.company-step-count {text-align: right; padding-right: .75em; padding-top: 0.5em; padding-bottom: 0.25em;}
-.goal-count {text-align: left; padding-left: .75em; padding-top: 0.5em; padding-bottom: 0.25em;}
+.company-step-count {text-align: right; padding-right: .75em; padding-top: 1em; padding-bottom: 0.25em;}
+.goal-count {text-align: left; padding-left: .75em; padding-top: 1em; padding-bottom: 0.25em;}
 
 .goal-logo {
+margin: 0 auto;
+display: block;
+text-align: center;
+@media #{$medium-up} {
 position: relative;
 top: 90px;
+}
+
 
 	em {margin: 0 auto; display: block; text-align: center;}
 
@@ -130,4 +136,10 @@ margin-bottom: 3em;
 .create-user-button {
 	width: 100%;
 	margin-top: 1.5em;
+}
+
+.connected {
+text-align: center;
+
+.button {width: 60%}
 }

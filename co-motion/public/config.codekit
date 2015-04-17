@@ -3698,6 +3698,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/connected.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15100,
+		"inputAbbreviatedPath": "\/images\/connected.png",
+		"outputAbbreviatedPath": "\/images\/connected.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/everest-goal.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
