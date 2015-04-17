@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="en" ng-app="comotionApp">
   <head>
     <meta charset="utf-8" />
@@ -14,23 +14,23 @@
   </head>
   <body ng-controller="mainController">
 
-    <div class="row collapse container" data-equalizer>
+      <div class="row collapse container" resize-nav>
 
-      <div class="small-12 medium-3 columns sidebar" data-equalizer-watch>
+          <div class="small-12 medium-3 columns sidebar">
 
-        <a href="#" ui-sref="home"><img src="images/co-motion-logo.png" width="200" height="165"></a>
+              <a href="#" ui-sref="home"><img src="images/co-motion-logo.png" width="200" height="165"></a>
 
-        <ul class="side-nav">
-          <li><a href="create.html" >Add a user</a></li>
-          <li><a>Teams <em>(Coming Soon)</em></a></li>
-        </ul>
+              <ul class="side-nav">
+                  <li><a href="create.html">Add a user</a></li>
+                  <li><a>Teams <em>(Coming Soon)</em></a></li>
+              </ul>
+          </div>
+
+          <div class="small-12 medium-9 columns maincontent">
+              <div ng-view></div>
+          </div>
+
       </div>
-
-      <div class="small-12 medium-9 columns maincontent" data-equalizer-watch>
-        <div ng-view></div>
-      </div>
-
-    </div>
 
 
 

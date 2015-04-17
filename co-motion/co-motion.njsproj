@@ -22,7 +22,7 @@
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <NodejsPort>1337</NodejsPort>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
@@ -36,7 +36,31 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="public\create.html" />
+    <Content Include="public\css\app.css" />
+    <Content Include="public\images\awards\bennevis.png" />
+    <Content Include="public\images\awards\edge-of-space.png" />
+    <Content Include="public\images\awards\everest.png" />
+    <Content Include="public\images\awards\kilimanjaro.png" />
+    <Content Include="public\images\awards\montblanc.png" />
+    <Content Include="public\images\awards\scaffelpike.png" />
+    <Content Include="public\images\awards\snowdon.png" />
+    <Content Include="public\images\co-motion-logo.png" />
+    <Content Include="public\images\co-motion.png" />
+    <Content Include="public\images\connected.png" />
+    <Content Include="public\images\everest-goal.jpg" />
+    <Content Include="public\images\explorers\1.png" />
+    <Content Include="public\images\explorers\2.png" />
+    <Content Include="public\images\explorers\3.png" />
+    <Content Include="public\images\explorers\4.png" />
+    <Content Include="public\images\explorers\5.png" />
+    <Content Include="public\images\explorers\6.png" />
+    <Content Include="public\images\explorers\7.png" />
+    <Content Include="public\images\explorers\8.png" />
+    <Content Include="public\images\explorers\9.png" />
     <Content Include="public\index.html" />
+    <Content Include="public\scss\app.scss" />
+    <Content Include="public\scss\_settings.scss" />
     <Content Include="public\templates\create.html" />
     <Content Include="public\templates\home.html" />
     <Content Include="public\templates\welcome.html" />
@@ -64,8 +88,13 @@
   <ItemGroup>
     <Folder Include="models\" />
     <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\awards\" />
+    <Folder Include="public\images\explorers\" />
     <Folder Include="public\js\" />
     <Folder Include="public\js\min\" />
+    <Folder Include="public\scss\" />
     <Folder Include="public\templates\" />
     <Folder Include="routes\" />
     <Folder Include="routes\api\" />
