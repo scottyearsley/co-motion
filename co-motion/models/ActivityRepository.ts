@@ -69,7 +69,7 @@ class ActivityRepository {
                      JOIN User ON Activity.UserId = User.Id \
                      WHERE DateTime = '" + dateMatch + "' \
                      GROUP BY User.Firstname, User.Surname \
-                     ORDER BY Activity.Steps;",(error, rows) => {
+                     ORDER BY Activity.Steps DESC;",(error, rows) => {
             if (error === null) {
                 deferred.resolve(rows);
             } else {
@@ -90,7 +90,7 @@ class ActivityRepository {
                     JOIN User ON Activity.UserId = User.Id \
                     WHERE DateTime LIKE '" + dateMatch + "' \
                     GROUP BY User.Id, User.Firstname, User.Surname \
-                    ORDER BY Activity.Steps DESC LIMIT 5;",(error, rows) => {
+                    ORDER BY steps DESC LIMIT 5;",(error, rows) => {
                 if (error === null) {
                     deferred.resolve(rows);
                 } else {

@@ -37,7 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="public\index.html" />
-    <Content Include="public\templates\config.html" />
     <Content Include="public\templates\create.html" />
     <Content Include="public\templates\home.html" />
     <Content Include="views\index.hbs" />

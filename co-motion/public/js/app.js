@@ -52,6 +52,11 @@ comotionApp.controller('mainController', function ($scope, $http, $window) {
         alert('Failed to get chart data' + data);
     });
 
+    $http.get('/api/activities/UserMonthTotals').success(function (data) {
+        $scope.userMonthdata = data;
+    }).error(function (data) {
+        alert('Failed to get user month data' + data);
+    });
 
 });
 
