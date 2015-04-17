@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>co-motion: healthy competition</title>
+    <title>co-motion: healthy competition - create an account</title>
     <link rel="stylesheet" href="./css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
@@ -14,24 +14,30 @@
   </head>
   <body ng-controller="mainController">
 
-    <div class="row collapse container" data-equalizer>
+  <div class="row create-user">
+      <div class="medium-4 small-centered columns">
 
-      <div class="small-12 medium-3 columns sidebar" data-equalizer-watch>
+          <img src="images/co-motion-logo.png" width="200" height="165" class="create-user-logo">
+          <label>
+              Firstname
+              <input type="text" placeholder="Enter your firstname" ng-model="firstname" />
+          </label>
 
-        <a href="#" ui-sref="home"><img src="images/co-motion-logo.png" width="200" height="165"></a>
+          <label>
+              Surname
+              <input type="text" placeholder="Enter your surname" ng-model="surname" />
+          </label>
 
-        <ul class="side-nav">
-          <li><a href="create.html" >Add User</a></li>
-          <li><a>Edit Profile <em>(Coming Soon)</em></a></li>
-        </ul>
+          <label>
+              Email Address
+              <input type="text" placeholder="Enter your email address" ng-model="email" />
+          </label>
+
+          <button aria-label="submit form" href="#" class="button create-user-button" ng-click="create()">Submit</button>
+
       </div>
 
-      <div class="small-12 medium-9 columns maincontent" data-equalizer-watch>
-        <div ng-view></div>
-      </div>
-
-    </div>
-
+  </div>
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

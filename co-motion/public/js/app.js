@@ -6,11 +6,6 @@ var comotionApp = angular.module('comotionApp', ['ngRoute']);
 comotionApp.config(function ($routeProvider) {
     $routeProvider
 
-             // route for the about page
-            .when('/create', {
-            templateUrl : '/templates/create.html',
-            controller  : 'mainController'
-        })
             // route for the welcome page following authentication
             .when('/welcome', {
             templateUrl : 'templates/welcome.html',
@@ -26,16 +21,16 @@ comotionApp.config(function ($routeProvider) {
 
 
 comotionApp.controller('mainController', function ($scope, $http, $window) {
-    
+
     $scope.create = function () {
         var firstname = $scope.firstname;
         var surname = $scope.surname;
         var email = $scope.email;
-        
+
         if (!firstname || !surname || !email) {
             return;
         }
-        
+
         // Simple POST request example (passing data) :
         $http.post('/api/users/', { firstname: firstname, surname: surname, email: email }).
           success(function (data, status, headers, config) {
@@ -45,7 +40,7 @@ comotionApp.controller('mainController', function ($scope, $http, $window) {
             alert('Failed to create user...boo! :(   ' + data);
         });
     }
-    
+
     $http.get('/api/activities/CompanyMonthTotals').success(function (data) {
         $scope.chartData = data;
     }).error(function (data) {

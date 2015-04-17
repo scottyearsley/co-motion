@@ -5742,3 +5742,15 @@ th.hide-for-touch {
   .sidebar img {
     display: block;
     margin: 0 auto; }
+
+.create-user {
+  margin-top: 3em; }
+
+.create-user-logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3em; }
+
+.create-user-button {
+  width: 100%;
+  margin-top: 1.5em; }
