@@ -1,0 +1,114 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+.hero {
+  width:100%;
+  max-height:500px;
+  padding:0;
+
+}
+
+.chart {
+display: block;
+margin: 0 auto;
+max-width: 100%!important;
+height: auto;
+}
+
+
+.tab-bar {
+	border-bottom: solid 1px #1a1a1a;
+}
+
+.awards {
+	background: #2C343E;
+	color: #fff;
+	border: 0;
+	img {display: block; text-align: center; margin: 0; padding: 0; margin: 0 auto;}
+	span {display: block; text-align: center;}
+}
+
+.goal-count,
+.company-step-count {
+font-size: 32px;
+font-weight: bold;
+font-family: $font-family-serif;
+	span{display:block; text-transform: uppercase; font-size: 16px; letter-spacing: 1px;
+}
+}
+
+.company-step-count {text-align: right; padding-right: .75em; padding-top: 0.5em; padding-bottom: 0.25em;}
+.goal-count {text-align: left; padding-left: .75em; padding-top: 0.5em; padding-bottom: 0.25em;}
+.goal-logo {
+img, em {
+margin: 0 auto; display: block; text-align: center;}
+}
+
+.company-stats {
+background:  url("/images/everest-goal.jpg") 0 0 no-repeat;
+background-size: cover;
+min-height: 250px;
+max-height: 500px;
+
+	.stats-data { display: table-cell; vertical-align: top;}
+}
+
+
+.user-stats {
+font-family: $font-family-serif;
+width: 100%;
+border-spacing: collapse;
+
+	td {text-align: center;}
+}
+
+.user-stats_steps {text-transform: uppercase;}
+
+
+.award-badges li {
+	padding: 0;
+}
+
+.sidebar {
+	background: #15191F;
+
+	img {display: block; margin: 0 auto;}
+}
