@@ -55,5 +55,31 @@ comotionApp.controller('mainController', function ($scope, $http, $window) {
 
 });
 
+comotionApp.directive('resizeNav', function() {
+    return {
+        restrict: 'A',
+        link: function(scope, element) {
+            // Workarea Height
+            $(document).ready(function () {
+                
+                function setHeight() {
+                    var windowHeight = $(document).height();
+                    $('.sidebar').css('height', windowHeight);
+                    $('.maincontent').css('height', windowHeight);
+                }                
+                
+                setHeight();
+                
+                $(window).resize(function () {
+                    setHeight();
+                });
+                
+                window.setInterval(setHeight, 1000);
+            });
+        }
+    }
+})
+
+
 
 $(document).foundation();

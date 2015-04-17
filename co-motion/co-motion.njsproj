@@ -7,7 +7,7 @@
     <RootNamespace>co-motion</RootNamespace>
     <ToolsVersionPromptShown>1.4</ToolsVersionPromptShown>
     <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
-    <LaunchUrl>http://co-motion.io:1337</LaunchUrl>
+    <LaunchUrl>http://co-motion.io:1337/create.html</LaunchUrl>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -39,6 +39,7 @@
     <Content Include="public\index.html" />
     <Content Include="public\templates\create.html" />
     <Content Include="public\templates\home.html" />
+    <Content Include="public\templates\welcome.html" />
     <Content Include="views\index.hbs" />
     <Content Include="views\layouts\_layout.hbs" />
     <Content Include="views\moves_auth.hbs" />
