@@ -36,7 +36,20 @@ class ActivityRepository {
 
         this.db.all("SELECT DateTime, SUM(Steps) as sum FROM Activity WHERE DateTime LIKE '" + dateMatch + "' GROUP BY DateTime ORDER BY DateTime ASC",(error, rows) => {
             if (error === null) {
-                deferred.resolve(rows);
+
+                // mould data into 2 axis of data.
+                var days = [];
+                var steps = [];
+                for (var i = 0; i < rows.length; i++) {
+
+                    var current = rows[i];
+                    var dt = current.DateTime;
+                    var s = current.sum;
+                    days.push(dt.substring(0, dt.length - 9));
+                    steps.push(s);
+                }
+
+                deferred.resolve({days:days, steps:steps});
             } else {
                 deferred.reject(error);
             }
@@ -56,7 +69,7 @@ class ActivityRepository {
                      JOIN User ON Activity.UserId = User.Id \
                      WHERE DateTime = '" + dateMatch + "' \
                      GROUP BY User.Firstname, User.Surname \
-                     ORDER BY Activity.Steps DESC;",(error, rows) => {
+                     ORDER BY Activity.Steps;",(error, rows) => {
             if (error === null) {
                 deferred.resolve(rows);
             } else {
@@ -77,7 +90,7 @@ class ActivityRepository {
                     JOIN User ON Activity.UserId = User.Id \
                     WHERE DateTime LIKE '" + dateMatch + "' \
                     GROUP BY User.Id, User.Firstname, User.Surname \
-                    ORDER BY Activity.Steps DESC;",(error, rows) => {
+                    ORDER BY Activity.Steps DESC LIMIT 5;",(error, rows) => {
                 if (error === null) {
                     deferred.resolve(rows);
                 } else {

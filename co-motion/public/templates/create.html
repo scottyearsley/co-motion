@@ -1,21 +1,23 @@
 <h2>Add User</h2>
-<form>
-  <div class="row">
+
+<div class="row">
     <div class="medium-4 columns">
-      <label>Firstname
-        <input type="text" placeholder="Enter your firstname" />
-      </label>
+        <label>
+            Firstname
+            <input type="text" placeholder="Enter your firstname" ng-model="firstname" />
+        </label>
     </div>
     <div class="medium-4 columns">
-      <label>Surname
-        <input type="text" placeholder="Enter your surname" />
-      </label>
+        <label>
+            Surname
+            <input type="text" placeholder="Enter your surname" ng-model="surname" />
+        </label>
     </div>
     <div class="medium-4 columns">
-      <label>Email Address
-        <input type="text" placeholder="Enter your email address" />
-      </label>
+        <label>
+            Email Address
+            <input type="text" placeholder="Enter your email address" ng-model="email" />
+        </label>
     </div>
-    <a role="button" aria-label="submit form" href="#" class="button">Submit</a>
-  </div>
- </div>
+    <button aria-label="submit form" href="#" class="button" ng-click="create()">Submit</button>
+</div>

@@ -16,11 +16,8 @@ module.exports = (() => {
             return repos.getCompanyDayTotals(date);
 
         }).then(dayTotals => {
-            var totals = {
-                total: monthTotal,
-                days: dayTotals
-            };
-            res.send(totals);
+            dayTotals.total = monthTotal;
+            res.send(dayTotals);
         });
     });
 

@@ -20,6 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.engine('.hbs', exphbs({ defaultLayout: '_layout', extname: '.hbs' }));
 app.set('view engine', '.hbs');
+app.use(express.static('public'));
 
 
 //app.use(express.favicon());

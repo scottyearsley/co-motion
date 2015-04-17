@@ -37,7 +37,7 @@ module.exports = (() => {
                 var authResponse = JSON.parse(responseString);
                 var repo = new userRepository();
                 repo.updateCode(userId, authResponse.access_token, authResponse.user_id);
-                res.render('moves_res', {});
+                res.redirect("/#");
             });
 
         }).end();
