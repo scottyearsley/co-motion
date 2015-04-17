@@ -5710,10 +5710,13 @@ th.hide-for-touch {
   padding-top: 0.5em;
   padding-bottom: 0.25em; }
 
-.goal-logo img, .goal-logo em {
-  margin: 0 auto;
-  display: block;
-  text-align: center; }
+.goal-logo {
+  position: relative;
+  top: 90px; }
+  .goal-logo em {
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
 
 .company-stats {
   background: url("/images/everest-goal.jpg") 0 0 no-repeat;

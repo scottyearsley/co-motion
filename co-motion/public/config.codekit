@@ -3599,6 +3599,83 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/awards\/bennevis.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68051,
+		"inputAbbreviatedPath": "\/images\/awards\/bennevis.png",
+		"outputAbbreviatedPath": "\/images\/awards\/bennevis.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/awards\/edge-of-space.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72499,
+		"inputAbbreviatedPath": "\/images\/awards\/edge-of-space.png",
+		"outputAbbreviatedPath": "\/images\/awards\/edge-of-space.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/awards\/everest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72600,
+		"inputAbbreviatedPath": "\/images\/awards\/everest.png",
+		"outputAbbreviatedPath": "\/images\/awards\/everest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/awards\/kilimanjaro.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68338,
+		"inputAbbreviatedPath": "\/images\/awards\/kilimanjaro.png",
+		"outputAbbreviatedPath": "\/images\/awards\/kilimanjaro.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/awards\/montblanc.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79736,
+		"inputAbbreviatedPath": "\/images\/awards\/montblanc.png",
+		"outputAbbreviatedPath": "\/images\/awards\/montblanc.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/awards\/scaffelpike.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75172,
+		"inputAbbreviatedPath": "\/images\/awards\/scaffelpike.png",
+		"outputAbbreviatedPath": "\/images\/awards\/scaffelpike.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/awards\/snowdon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72771,
+		"inputAbbreviatedPath": "\/images\/awards\/snowdon.png",
+		"outputAbbreviatedPath": "\/images\/awards\/snowdon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/co-motion-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
