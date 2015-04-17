@@ -8,15 +8,19 @@ comotionApp.config(function ($routeProvider) {
 
              // route for the about page
             .when('/create', {
-        templateUrl : '/templates/create.html',
-        controller  : 'mainController'
-    })
-
+            templateUrl : '/templates/create.html',
+            controller  : 'mainController'
+        })
+            // route for the welcome page following authentication
+            .when('/welcome', {
+            templateUrl : 'templates/welcome.html',
+            controller  : 'mainController'
+        })
             // route for the home page
             .when('/', {
-        templateUrl : '/templates/home.html',
-        controller  : 'mainController'
-    });
+            templateUrl : '/templates/home.html',
+            controller  : 'mainController'
+        });
 
 });
 
@@ -41,7 +45,7 @@ comotionApp.controller('mainController', function ($scope, $http, $window) {
             alert('Failed to create user...boo! :(   ' + data);
         });
     }
-
+    
     $http.get('/api/activities/CompanyMonthTotals').success(function (data) {
         $scope.chartData = data;
     }).error(function (data) {
