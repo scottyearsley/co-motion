@@ -8,13 +8,19 @@
 
              // route for the about page
             .when('/create', {
-                templateUrl : '/templates/create.html',
+                templateUrl : 'templates/create.html',
+                controller  : 'mainController'
+            })
+
+            // route for the welcome page following authentication
+            .when('/welcome', {
+                templateUrl : 'templates/welcome.html',
                 controller  : 'mainController'
             })
 
             // route for the home page
             .when('/', {
-                templateUrl : '/templates/home.html',
+                templateUrl : 'templates/home.html',
                 controller  : 'mainController'
             });
 
@@ -28,6 +34,26 @@
 
     comotionApp.controller('mainController', function($scope) {
         $scope.message = 'Look! I am an about page.';
+    });
+
+
+    // Workarea Height
+    $(document).ready(function() {
+
+        function setHeight() {
+            var windowHeight = $(window).innerHeight();
+
+            $('.sidebar').css('height', windowHeight);
+            $('.maincontent').css('height', windowHeight);
+
+        };
+
+        setHeight();
+
+        $(window).resize(function() {
+            setHeight();
+        });
+
     });
 
 
