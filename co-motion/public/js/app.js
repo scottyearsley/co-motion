@@ -8,13 +8,13 @@
 
              // route for the about page
             .when('/create', {
-                templateUrl : '/templates/create.html',
+                templateUrl : '/views/create.html',
                 controller  : 'mainController'
             })
 
             // route for the home page
             .when('/', {
-                templateUrl : '/templates/home.html',
+                templateUrl : '/views/home.html',
                 controller  : 'mainController'
             });
 
